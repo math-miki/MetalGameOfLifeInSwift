@@ -14,6 +14,8 @@
 		811D0B0B2194429F004E2A16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 811D0B092194429F004E2A16 /* LaunchScreen.storyboard */; };
 		811D0B162194429F004E2A16 /* MetalGameOfLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D0B152194429F004E2A16 /* MetalGameOfLifeTests.swift */; };
 		811D0B212194429F004E2A16 /* MetalGameOfLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D0B202194429F004E2A16 /* MetalGameOfLifeUITests.swift */; };
+		811D0B2F219442F2004E2A16 /* GOLRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D0B2E219442F2004E2A16 /* GOLRenderer.swift */; };
+		811D0B3121949E32004E2A16 /* GOLShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 811D0B3021949E32004E2A16 /* GOLShaders.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		811D0B1C2194429F004E2A16 /* MetalGameOfLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetalGameOfLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		811D0B202194429F004E2A16 /* MetalGameOfLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalGameOfLifeUITests.swift; sourceTree = "<group>"; };
 		811D0B222194429F004E2A16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		811D0B2E219442F2004E2A16 /* GOLRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOLRenderer.swift; sourceTree = "<group>"; };
+		811D0B3021949E32004E2A16 /* GOLShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = GOLShaders.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				811D0B072194429F004E2A16 /* Assets.xcassets */,
 				811D0B092194429F004E2A16 /* LaunchScreen.storyboard */,
 				811D0B0C2194429F004E2A16 /* Info.plist */,
+				811D0B2E219442F2004E2A16 /* GOLRenderer.swift */,
+				811D0B3021949E32004E2A16 /* GOLShaders.metal */,
 			);
 			path = MetalGameOfLife;
 			sourceTree = "<group>";
@@ -257,7 +263,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				811D0B032194429D004E2A16 /* ViewController.swift in Sources */,
+				811D0B3121949E32004E2A16 /* GOLShaders.metal in Sources */,
 				811D0B012194429D004E2A16 /* AppDelegate.swift in Sources */,
+				811D0B2F219442F2004E2A16 /* GOLRenderer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +443,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HGFZ89E935;
 				INFOPLIST_FILE = MetalGameOfLife/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +462,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HGFZ89E935;
 				INFOPLIST_FILE = MetalGameOfLife/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
